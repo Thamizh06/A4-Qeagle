@@ -30,7 +30,7 @@ Install these before running locally:
 
 ---
 
-## 📁 Repository Layout (suggested)
+## 📁 Repository Layout
 
 ```text
 upskill-advisor/
@@ -62,6 +62,13 @@ upskill-advisor/
 ```
 
 ---
+## Frontend — Setup & Run
+**Windows (PowerShell)**
+```powershell
+cd frontend
+npm install 
+npm run dev
+```
 
 ## 🐍 Backend — Setup & Run
 
