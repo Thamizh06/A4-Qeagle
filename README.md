@@ -30,6 +30,10 @@ Install these before running locally:
 
 ---
 
+Architecture Diagram
+<img width="2216" height="1766" alt="Thamizh-A4-Architecture" src="https://github.com/user-attachments/assets/0495034b-1fe5-4c4d-85be-062bf45557ed" />
+
+
 ## 📁 Repository Layout
 
 ```text
