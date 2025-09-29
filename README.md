@@ -207,20 +207,7 @@ npm install
 # or: pnpm install / yarn install
 ```
 
-### 2) Configure API base (optional but recommended)
-
-If your code uses an env var, create `frontend/.env`:
-
-```ini
-VITE_API_BASE_URL=http://localhost:8000
-```
-
-Then in your `api.ts` you might reference it like:
-```ts
-const API_BASE = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8000';
-```
-
-### 3) Run the dev server
+### 2) Run the dev server
 ```bash
 npm run dev
 ```
@@ -245,7 +232,7 @@ Open the URL Vite prints, typically: `http://localhost:5173`.
 
 ---
 
-## 🔌 Postman (optional)
+## 🔌 Postman 
 
 Import a simple collection or use curl. Example request for `/advise` is shown above. Ensure `goal_role` matches a role in `jds.jsonl` exactly (e.g., `"SDET"`, `"GenAI QA"`).
 
