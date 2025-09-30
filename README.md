@@ -99,7 +99,7 @@ If you **have** `requirements.txt` already, use it:
 pip install -r requirements.txt
 ```
 
-If you need to create one, here is a ready list (pin versions as per your project):
+If you need to create one, here is a ready list:
 ```text
 fastapi==0.114.1
 uvicorn[standard]==0.30.6
