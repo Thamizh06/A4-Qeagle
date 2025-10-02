@@ -30,8 +30,12 @@ Install these before running locally:
 
 ---
 
-Architecture Diagram
+Architecture Diagram:
 <img width="2216" height="1766" alt="Thamizh-A4-Architecture" src="https://github.com/user-attachments/assets/0495034b-1fe5-4c4d-85be-062bf45557ed" />
+
+
+Sequence Diagram:
+<img width="3840" height="1657" alt="Untitled diagram _ Mermaid Chart-2025-10-02-094803" src="https://github.com/user-attachments/assets/32bb1a3d-69e8-48c6-8b1e-cb77a3476912" />
 
 
 ## 📁 Repository Layout
@@ -120,15 +124,29 @@ python-dotenv==1.0.1
 
 > On first run, `sentence-transformers` will download model weights (e.g., `all-MiniLM-L6-v2`).
 
-### 3) Environment variables (optional)
+### 3) Environment variables 
 
 Create `backend/.env` if you want to override defaults:
 
 ```ini
 # example keys (your app.config may expose more)
-RERANK_TOPN=8
+#“As of now, use my temp Pinecone key in .env for local testing. When you’re ready, create your own Pinecone API key and replace the PINECONE_* values
+# Pinecone
+PINECONE_API_KEY=pcsk_5q4rDv_M25BrXjCzb8w7nfvyhXe7ZJAu77L24XUx9uTNC1qJa7c6ZX4uaX178Ct5pBDBEb  # For Testing Use My api Key 
+PINECONE_INDEX=upskill-courses
+PINECONE_HOST=https://upskill-courses-hkj6m4q.svc.aped-4627-b74a.pinecone.io
+
+# Models
 EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
 CROSS_ENCODER_MODEL=cross-encoder/ms-marco-MiniLM-L-6-v2
+OLLAMA_BASE_URL=http://127.0.0.1:11434  # optional
+
+# App
+TOP_K_VECTOR=20
+TOP_K_BM25=20
+RERANK_TOPN=50
+RETURN_TOP=8
+
 ```
 
 ### 4) Run the API (dev mode)
