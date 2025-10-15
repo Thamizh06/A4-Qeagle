@@ -7,10 +7,10 @@ Back end offers **hybrid retrieval** (BM25 + embeddings) with **re‑rank + plan
 
 ## ✨ What’s inside
 
-- **Frontend:** React (Vite), TypeScript/JS, Tailwind (optional), simple API client.
+- **Frontend:** React (Vite), TypeScript/JS, Tailwind, simple API client.
 - **Backend:** FastAPI (Python 3.10+), `rank-bm25`, `sentence-transformers`, scikit‑learn NN, structlog, ReportLab.
 - **Data:** JSONL catalogs for **courses** and **job descriptions (JDs)**.
-- **RAG Flow:** BM25 + Vector → RRF fusion → (optional) cross‑encoder re‑rank → 3‑course planner → gap map + timeline.
+- **RAG Flow:** BM25 + Vector → RRF fusion → cross‑encoder re‑rank → 3‑course planner → gap map + timeline.
 - **Observability:** `/metrics` endpoint, structured logs, simple trace ids.
 - **PDF:** `/plan/pdf` to download a one‑page plan.
 
