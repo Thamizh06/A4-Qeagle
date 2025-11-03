@@ -137,7 +137,7 @@ Create `backend/.env` if you want to override defaults:
 PINECONE_API_KEY=pcsk_5q4rDv_M25BrXjCzb8w7nfvyhXe7ZJAu77L24XUx9uTNC1qJa7c6ZX4uaX178Ct5pBDBEb  # For Testing Use My api Key 
 PINECONE_INDEX=upskill-courses
 PINECONE_HOST=https://upskill-courses-hkj6m4q.svc.aped-4627-b74a.pinecone.io
-GOOGLE_API_KEY="AIzaSyDGa9_TrU7tt5fHN4ZMC05a6d-jo0ISMmE"
+GOOGLE_API_KEY= "AIzaSyDrh_zS9DDLZIYzgagKK8rt-GJ_lZHATQg"
 
 # Models
 EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
