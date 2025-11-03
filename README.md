@@ -120,6 +120,8 @@ httpx==0.27.2
 structlog==24.4.0
 reportlab==4.2.2
 python-dotenv==1.0.1
+google-generativeai==0.7.2
+
 ```
 
 > On first run, `sentence-transformers` will download model weights (e.g., `all-MiniLM-L6-v2`).
